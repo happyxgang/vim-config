@@ -43,17 +43,17 @@ NeoBundle 'vim-scripts/AnsiEsc.vim'
 NeoBundle 'vim-scripts/LargeFile'
 NeoBundle 'docker/docker' , {'rtp': 'contrib/syntax/vim/'}
 NeoBundle 'jsx/jsx.vim'
+NeoBundle 'scrooloose/nerdtree'
 " Lazy load shit because I don't always use them
-NeoBundleLazy 'scrooloose/nerdtree'
-NeoBundleLazy 'majutsushi/tagbar'
-NeoBundleLazy 'vim-ruby/vim-ruby'
-autocmd FileType ruby,rb,erb,ru NeoBundleSource vim-ruby
-NeoBundleLazy 'scrooloose/syntastic'
-autocmd FileType ruby,rb,erb,ru NeoBundleSource syntastic
-NeoBundleLazy 'fatih/vim-go'
-autocmd FileType go NeoBundleSource vim-go
-NeoBundleLazy 'tfnico/vim-gradle'
-autocmd FileType gradle NeoBundleSource vim-gradle
+"NeoBundleLazy 'majutsushi/tagbar'
+"NeoBundleLazy 'vim-ruby/vim-ruby'
+"autocmd FileType ruby,rb,erb,ru NeoBundleSource vim-ruby
+"NeoBundleLazy 'scrooloose/syntastic'
+"autocmd FileType ruby,rb,erb,ru NeoBundleSource syntastic
+"NeoBundleLazy 'fatih/vim-go'
+"autocmd FileType go NeoBundleSource vim-go
+"NeoBundleLazy 'tfnico/vim-gradle'
+"autocmd FileType gradle NeoBundleSource vim-gradle
 " NeoBundle 'myusuf3/numbers.vim' " unused because it is slow
 
 call neobundle#end()
@@ -172,7 +172,7 @@ set listchars=tab:▸\ ,eol:¬
 set t_Co=256
 set background=dark
 colorscheme muon
-let g:airline_theme='raven'
+" let g:airline_theme='dark'
 " fix NonText and SpecialKey (equivalent to Comment)
 hi NonText ctermfg=240 ctermbg=234 gui=None guifg=#585858 guibg=#1c1c1c
 hi SpecialKey ctermfg=240 ctermbg=234 gui=None guifg=#585858 guibg=#1c1c1c
